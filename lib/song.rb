@@ -27,7 +27,8 @@ class Song
   
   def self.genre_count
     genres_hash = Hash.new(0)
-    if 
+    @@genres.each do |genre| 
+      if 
     genres_hash.tap { |hash| @@genres.each { |genre| hash[genre] += 1 } }
   end
   
